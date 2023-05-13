@@ -5,9 +5,8 @@
   "proxy": "http://localhost:5000",
   "main": "index.js",
   "scripts": {
-    "build": "cd frontend && npm run build",
-    "install-dep": "cd frontend && npm install",
-    "start": "npm run build && npm run install-dep && node backend/server.js"
+    "build": "npm install && cd ./frontend && npm install && npm run build",
+    "start": "node backend/server.js"
   },
   "author": "",
   "license": "ISC",
